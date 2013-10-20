@@ -15,17 +15,17 @@ public class FolderHandler extends DefaultHandler {
 	}
 	public void startElement (String uri, String localName,String qName, Attributes attributes) throws SAXException
 	    {
-		 	System.out.println(attributes.getValue("Id") +" " + attributes.getValue("Reputation"));
-	    	//if(attributes.getValue("PostTypeId").equals("2")){
-	    		Text keyWords =new Text(attributes.getValue("Id"));
-				Text valueWords = new Text(attributes.getValue("Reputation"));
+		 	System.out.println(attributes.getValue("OwnerUserId") +" " + attributes.getValue("ParentId"));
+	    	if(attributes.getValue("PostTypeId").equals("2")){
+	    		Text keyWords =new Text(attributes.getValue("OwnerUserId"));
+				Text valueWords = new Text(attributes.getValue("ParentId"));
 				String val=keyWords.toString()+" "+valueWords.toString();
 				// Write the sentence 
 				//System.out.println(keyWords.toString() + " :: " + val);
 				if(keyWords != null && valueWords != null){
 					setValue(new Text(val));
 				}
-	    	//}
+	    	}
 	    }
 
 }
