@@ -1,3 +1,10 @@
+/**
+ * @author ShokeenAnil
+ * This is the mapper file for the Recommendation engine for stackoverflow.
+ * 
+ * Written for a single system but can easily be configured on a cluster.
+ * 
+ * */
 import java.io.IOException;
 import java.util.StringTokenizer;
 
