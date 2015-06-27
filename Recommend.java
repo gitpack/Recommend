@@ -1,3 +1,10 @@
+/**
+ * @author ShokeenAnil
+ * This is the reducer file for the Recommendation engine for stackoverflow data dumps.
+ * 
+ * Written for a single system but can easily be configured on a cluster.
+ * 
+ * */
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
